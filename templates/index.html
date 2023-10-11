@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Analysis</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body>
+    <div class="container">
+        <h1 class="form-title">Analysis</h1>
+        <form action="/submit" method="POST"> <!-- Update the action attribute with your Flask route -->
+            <div class="General-Health-details-box">
+                <span class="General-Health-title">General Health</span>
+                <div class="General-Health">
+                    <input type="radio" name="general_health" id="poor" value="Poor">
+                    <label for="poor">Poor</label>
+                    <input type="radio" name="general_health" id="fair" value="Fair">
+                    <label for="fair">Fair</label>
+                    <input type="radio" name="general_health" id="good" value="Good">
+                    <label for="good">Good</label>
+                    <input type="radio" name="general_health" id="very_good" value="Very Good">
+                    <label for="very_good">Very Good</label>
+                    <input type="radio" name="general_health" id="excellent" value="Excellent">
+                    <label for="excellent">Excellent</label>
+                </div>
+            </div>
+            <div class="Checkup-Frequency">
+                <span class="Checkup-Frequency-title">Checkup Frequency</span>
+                <div class="Checkup-Frequency">
+                    <input type="radio" name="checkup_frequency" id="within_past_years" value="Within the past year">
+                    <label for="within_past_years">Within Past Years</label>
+                    <input type="radio" name="checkup_frequency" id="past_2_years" value="Within the past 2 years">
+                    <label for="past_2_years">Past 2 Years</label>
+                    <input type="radio" name="checkup_frequency" id="5_years" value="Within the past 5 years">
+                    <label for="5_years">5 Years</label>
+                    <input type="radio" name="checkup_frequency" id="past_5_years_or_above" value ="5 or more years ago">
+                    <label for="past_5_years_or_above">Past 5 Years or above</label>
+                    <input type="radio" name="checkup_frequency" id="Never" value ="Never">
+                    <label for="Never">Never</label>
+                </div>
+            </div>
+            <div class="Exercise-details-box">
+                <span class="Exercise-title">Exercise</span>
+                <div class="Exercise">
+                    <input type="radio" name="exercise" id="exercise_yes" value="Yes">
+                    <label for="exercise_yes">Yes</label>
+                    <input type="radio" name="exercise" id="exercise_no" value="No">
+                    <label for="exercise_no">No</label>
+                </div>
+            </div>
+            <div class="Skin-Cancer">
+                <span class="Skin-Cancer-title">Skin Cancer</span>
+                <div class="Skin-Cancer">
+                    <input type="radio" name="skin_cancer" id="skin_cancer_yes" value="Yes">
+                    <label for="skin_cancer_yes">Yes</label>
+                    <input type="radio" name="skin_cancer" id="skin_cancer_no" value="No">
+                    <label for="skin_cancer_no">No</label>
+                </div>
+            </div>
+            <div class="Other Cancer">
+                <span class="Other Cancer">Other Cancer</span>
+                <div class="Other Cancer">
+                    <input type="radio" name="other_cancer" id="other_cancer_yes" value = "Yes">
+                    <label for="yes">Yes</label>
+                    <input type="radio" name="other_cancer" id="other_cancer_no" value = "No">
+                    <label for="no">No</label>
+                </div>
+            </div>
+            <div class="Depression">
+                    <span class="Depression">Depression</span>
+                    <div class="Depression">
+                        <input type="radio" name="Depression" id="Depression_yes" value = "Yes">
+                        <label for="yes">Yes</label>
+                        <input type="radio" name="Depression" id="Depression_no"  value = "No">
+                        <label for="no">No</label>
+                    </div>
+            </div>
+            <div class="Diabetes-title">
+                    <span class="Diabetes-title">Diabetes</span>
+                    <div class="Diabetes">
+                        <input type="radio" name="diabetes" id="Diabetes_yes" value = "Yes">
+                        <label for="yes">Yes</label>
+                        <input type="radio" name="diabetes" id="Diabetes_no"  value = "No">
+                        <label for="no">No</label>
+                        <input type="radio" name="diabetes" id="no_prediabetes" value = "No, pre-diabetes or borderline diabetes">
+                        <label for="no prediabetes">No Prediabetes or Borderline Diabetes</label>
+                        <input type="radio" name="diabetes" id="yes_but_female_fold" value = "Yes, but female told only during pregnancy">
+                        <label for="yes but female fold">Yes But Female Fold Only During Pregnancy</label>
+                    </div>
+            </div>
+            <div class="Arthritis">
+                    <span class="Arthritis">Arthritis</span>
+                    <div class="Arthritis">
+                        <input type="radio" name="Arthritis" id="Arthritis_yes" value = "Yes">
+                        <label for="yes">Yes</label>
+                        <input type="radio" name="Arthritis" id="Arthritis_no"  value = "No">
+                        <label for="no">No</label>
+                    </div>
+            </div>
+            <div class="Sex-details-box">
+                    <span class="Sex">Sex</span>
+                    <div class="Sex-Category">
+                        <input type="radio" name="Sex" id="Sex_Female" value = "Female">
+                        <label for="Female">Female</label>
+                        <input type="radio" name="Sex" id="Sex_Male" value = "Male">
+                        <label for="Male">Male</label>
+                    </div>
+            </div>
+            <div class="Age Category-title">
+                    <span class="Age Category-title">Age Category</span>
+                    <div class="Age Category">
+                        <input type="radio" name="Age_Categroy" id="age_18-24" value = "18-24">
+                        <label for="18-24">18-24</label>
+                        <input type="radio" name="Age_Category" id="age_25-29" value = "25-29">
+                        <label for="25-29">25-29</label>
+                        <input type="radio" name="Age Category" id="age_30-34" value = "30-34">
+                        <label for="30-34">30-34</label>
+                        <input type="radio" name="Age Category" id="age_35-39" value = "35-39">
+                        <label for="35-39">35-39</label>
+                        <input type="radio" name="Age Category" id="age_40-44" value = "40-44">
+                        <label for="40-44">40-44</label>
+                        <input type="radio" name="Age Category" id="age_45-49" value = "45-49">
+                        <label for="35-39">45-49</label>
+                        <input type="radio" name="Age Category" id="age_50-54" value = "50-54">
+                        <label for="35-39">50-54</label>
+                        <input type="radio" name="Age Category" id="age_55-59" value = "55-59">
+                        <label for="55-59">55-59</label>
+                        <input type="radio" name="Age Category" id="age_60-64" value = "60-64">
+                        <label for="60-64">60-64</label>
+                        <input type="radio" name="Age Category" id="age_65-69" value = "65-69">
+                        <label for="65-69">65-69</label>
+                        <input type="radio" name="Age Category" id="age_70-74" value = "70-74">
+                        <label for="70-74">70-74</label>
+                    </div>
+            </div>
+            <div class="user-input-box">
+                <label for="height">Height</label>
+                <input type="number" id="height" name="height" placeholder="Enter Height">
+            </div>
+            <div class="user-input-box">
+                <label for="weight">Weight</label>
+                <input type="number" id="weight" name="weight" placeholder="Enter Weight">
+            </div>
+            <div class="user-input-box">
+                <label for="bmi">BMI</label>
+                <input type="number" id="bmi" name="bmi" placeholder="Enter BMI">
+            </div>
+            <!-- Add more text fields as needed -->
+
+            <!-- Smoking History -->
+            <div class="Smoking-details-box">
+                <span class="Smoking-title">Smoking History</span>
+                <div class="Smoking">
+                    <input type="radio" name="smoking_history" id="smoking_yes" value="Yes">
+                    <label for="smoking_yes">Yes</label>
+                    <input type="radio" name="smoking_history" id="smoking_no" value="No">
+                    <label for="smoking_no">No</label>
+                </div>
+            </div>
+
+            <!-- Alcohol, Fruit, Green Vegetable, Fried Potato Consumption -->
+            <div class="user-input-box">
+                <label for="alcohol_consumption">Alcohol Consumption</label>
+                <input type="number" id="alcohol_consumption" name="alcohol_consumption" placeholder="Enter Alcohol Consumption">
+            </div>
+            <div class="user-input-box">
+                <label for="fruit_consumption">Fruit Consumption</label>
+                <input type="number" id="fruit_consumption" name="fruit_consumption" placeholder="Enter Fruit Consumption">
+            </div>
+            <div class="user-input-box">
+                <label for="green_vegetable_consumption">Green Vegetable Consumption</label>
+                <input type="number" id="green_vegetable_consumption" name="green_vegetable_consumption" placeholder="Enter Green Vegetable Consumption">
+            </div>
+            <div class="user-input-box">
+                <label for="fried_potato_consumption">Fried Potato Consumption</label>
+                <input type="number" id="fried_potato_consumption" name="fried_potato_consumption" placeholder="Enter Fried Potato Consumption">
+            </div>
+
+            <!-- Submit button -->
+            <div class="form-submit-btn">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
